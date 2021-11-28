@@ -9,7 +9,7 @@ class Palindrome
 			if(s.charAt(i)!=s.charAt(s.length()-i-1))flag=false;
 		}
 		if(flag)
-			System.out.println("Palindorm");
+			System.out.println("It is a Palindrome");
 		else
 			System.out.println("Not Palindrome");
 	}
