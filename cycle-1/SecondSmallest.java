@@ -2,32 +2,17 @@ class SecondSmallest
 {
     public static void main(String args[])
     {
-        int[] arr={2,10,1,4,5,6,7};
-        int first,second;
-        if(arr[0]>arr[1])
-        {
-            first=arr[1];
-            second=arr[0];
-        }else
-        {
-            first=arr[0];
-            second=arr[1];
-        }
-        for(int i=1;i<arr.length;++i)
-        {
-            if(arr[i]<first)
-            {
-                second=first;
-                first=arr[i];
-            }else
-            {
-                if(arr[i]<second)
-                {
-                    second=arr[i];
-                }
-            }
-            
-        }
-        System.out.println("The second smallest element is "+second);
-    }
+		int arr[]={1,1,1,2,3,4,6};
+		int first=Integer.MAX_VALUE,second=Integer.MAX_VALUE;
+		for(int i=0;i<arr.length;++i)
+		{
+			if(arr[i]<first)first=arr[i];
+		}
+		for(int i=0;i<arr.length;++i)
+		{
+			if(arr[i]<second && arr[i]!=first)second=arr[i];
+		
+    	}
+		System.out.println("The Second smallest number is "+second);
+	}
 }

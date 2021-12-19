@@ -2,15 +2,18 @@ class Palindrome
 {
 	public static void main(String args[])
 	{
-		boolean flag=true;
-		String s="saippuakivikauppias";
-		for(int i=0;i<s.length()/2;++i)
+		String st="racecar";
+		int flag=1;
+		for(int i=0;i<st.length()/2;++i)
 		{
-			if(s.charAt(i)!=s.charAt(s.length()-i-1))flag=false;
+			if(st.toLowerCase().charAt(i)!=st.charAt(st.toLowerCase().length()-1-i))flag=0;
 		}
-		if(flag)
-			System.out.println("It is a Palindrome");
-		else
-			System.out.println("Not Palindrome");
+		if(flag==1)
+		{
+			System.out.println("The String is Palindrome");
+		}else
+		{
+			System.out.println("The String is Note palindrome");
+		}
 	}
 }
