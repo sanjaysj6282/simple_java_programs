@@ -112,7 +112,7 @@ class Geometry
 {
 	public static void main(String args[])
 	{
-		Area a=new Circle(10,"Circle1");
+		Circle a=new Circle(10,"Circle1");
 		Square s=new Square(10,"Square1");
 		Cylinder c=new Cylinder(10,10,"Cylinder1");
 		Sphere sp=new Sphere(10,"Sphere1");
