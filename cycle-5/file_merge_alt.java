@@ -1,12 +1,12 @@
 import java.io.*;
-class FileMerge
+class FileMergeAlt
 {
 	public static void main(String args[]) throws IOException
 	{
-		FileInputStream f1=null;
-		FileInputStream f2=null;
-		FileOutputStream fout=null;
-		int i;
+		BufferedReader f1=null;
+		BufferedReader f2=null;
+		PrintWriter fout=null;
+		String line1,line2;
 		if(args.length!=3)
 		{
 			System.out.println("Insufficient Arguments");
@@ -15,23 +15,23 @@ class FileMerge
 		{
 			try
 			{
-				f1=new FileInputStream(args[0]);
-				f2=new FileInputStream(args[1]);
-				fout=new FileOutputStream(args[2]);
+				f1=new BufferedReader(new FileReader(args[0]));
+				f2=new BufferedReader(new FileReader(args[1]));
+				fout=new PrintWriter(args[2]);
 				do
 				{
-					i=f1.read();
-					if(i!=-1)
+					line1=f1.readLine();
+					line2=f2.readLine();
+					if(line1!=null)
 					{
-						fout.write(i);
+						fout.println(line1);
 					}
-				}while(i!=-1);
-				fout.write((int)'\n');
-				do
-				{
-					i=f2.read();
-					if(i!=-1)fout.write(i);
-				}while(i!=-1);
+					if(line2!=null)
+					{
+						fout.println(line2);
+					}
+				}while(line1!=null || line2!=null);
+				
 			}catch(IOException e)
 			{
 				System.out.println("Error Reading files");
