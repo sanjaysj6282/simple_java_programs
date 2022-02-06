@@ -1,6 +1,3 @@
-java
-is
-a
-nice
-programming
-language
+this is the first part
+
+THis is the second part

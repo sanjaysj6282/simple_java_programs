@@ -15,7 +15,11 @@ class NoOfParts
 			{
 				i=f1.read();
 				if(i==(int)' ')spaces++;
-				if(i==(int)'\n')lines++;
+				if(i==(int)'\n')
+				{
+					spaces++;
+					lines++;
+				}
 				chars++;
 
 			}while(i!=-1);

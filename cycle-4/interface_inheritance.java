@@ -29,19 +29,19 @@ class Q implements P12
 {
 	public void P_method()
 	{
-		System.out.println(P_const);
+		System.out.println("P_method  "+P_const);
 	}
 	public void P1_method()
 	{
-		System.out.println(P1_const);
+		System.out.println("P1_method  "+P1_const);
 	}
 	public void P2_method()
 	{
-		System.out.println(P2_const);
+		System.out.println("P2_method  "+P2_const);
 	}
 	public void P12_method()
 	{
-		System.out.println(P12_const);
+		System.out.println("P12_method  "+P12_const);
 	}
 
 }

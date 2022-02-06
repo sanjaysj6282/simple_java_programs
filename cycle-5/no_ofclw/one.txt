@@ -1,2 +1,2 @@
-Java is a nice programming language.
-It is Robust.
+Java is a nice programming language
+It is Robust
