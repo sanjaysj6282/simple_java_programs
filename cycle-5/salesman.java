@@ -55,5 +55,6 @@ class SalesManMain
 			}
 			System.out.println("The Commision is : "+salesmen[i].commision);
 		}
+		scan.close();
 	}
 }
