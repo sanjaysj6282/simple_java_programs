@@ -43,11 +43,12 @@ class StudentMain
 				students[i].age=scan.nextInt();
 				if(students[i].age<15 || students[i].age>21)
 				{
-					throw new InvalidAgeException("The Age is below 15 or above 21");
+					throw new InvalidAgeException("The Age must be below 15 or above 21");
 				}
 			}catch(InvalidAgeException e)
 			{
 				System.out.println("Not a valid age");
+				System.out.println(e.getMessage());
 			}
 			System.out.println("Enter the rollno");
 			students[i].rollno=scan.nextInt();

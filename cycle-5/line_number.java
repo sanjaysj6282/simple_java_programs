@@ -8,10 +8,14 @@ class LineNumber
 		PrintWriter f2=null;
 		String line;
 		int i=1;
+		
+		BufferedReader inp=new BufferedReader(new InputStreamReader(System.in));
 		try
 		{
-			f1=new BufferedReader(new FileReader(args[0]));
-			f2=new PrintWriter(args[1]);
+			System.out.println("Enter the name of the source file");
+			f1=new BufferedReader(new FileReader(inp.readLine()));
+			System.out.println("Enter the name of destination file");
+			f2=new PrintWriter(inp.readLine());
 			do
 			{	
 				line=f1.readLine();
