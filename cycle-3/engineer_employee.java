@@ -26,7 +26,7 @@ class EE
 	{
 		Engineer e=new Engineer();
 		e.calcSalary();
-		super.calcSalary();
+		// super.calcSalary();
 
 	}
 }

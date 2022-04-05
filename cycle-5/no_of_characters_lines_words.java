@@ -1,7 +1,5 @@
 import java.io.*;
-
-
-class NoOfParts
+class NoOfPart
 {
 	public static void main(String args[])
 	{
@@ -27,8 +25,7 @@ class NoOfParts
 		}catch(IOException e)
 		{
 			System.out.println("Error in Opening the file");
-		}finally
-		{
+		}
 			try
 			{
 				f1.close();
@@ -36,7 +33,7 @@ class NoOfParts
 			{
 				System.out.println("Error in closing the file");
 			}
-		}
+		
 		System.out.println("NO of characters : "+chars);
 		System.out.println("NO of words : "+(spaces+1));
 		System.out.println("NO of lines : "+(lines+1));

@@ -5,7 +5,7 @@ class Employee
 	int ph_no;
 	String add;
 	int salary;
-	void Employee(String name,int age,int ph_no,String add,int salary)
+	Employee(String name,int age,int ph_no,String add,int salary)
 	{
 		this.name=name;
 		this.age=age;
@@ -22,7 +22,7 @@ class Employee
 class Officer extends Employee
 {
 	String specialization;
-	void Officer(String name,int age,int ph_no,String add,int salary,String specialization)
+	Officer(String name,int age,int ph_no,String add,int salary,String specialization)
 	{	
 		super(name,age,ph_no,add,salary);
 		this.specialization=specialization;
@@ -33,7 +33,7 @@ class Officer extends Employee
 class Manager extends Employee
 {
 	String department;
-	void Manager(String name,int age,int ph_no,String add,int salary,String department)
+	Manager(String name,int age,int ph_no,String add,int salary,String department)
 	{	
 		super(name,age,ph_no,add,salary);
 		this.department=department;
