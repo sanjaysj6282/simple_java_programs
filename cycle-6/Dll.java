@@ -4,7 +4,7 @@ class Dll {
     public static void main(String args[]) {
         LinkedList<String> list = new LinkedList<String>();
         list.add("Alok");
-        list.add(0, "SanjaY");
+        list.add(0, "Sanjay");
         list.add("Prince");
         list.add("Joel");
         list.add("Kishan");
