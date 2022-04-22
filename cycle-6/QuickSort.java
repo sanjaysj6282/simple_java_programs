@@ -34,12 +34,14 @@ class QuickSort {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the list size");
         int n = in.nextInt();
-        String s = in.nextLine();
+        // String s = in.nextLine();
         String[] arr = new String[n];
         System.out.println("Enter the names");
         for (int i = 0; i < n; i++)
             arr[i] = in.nextLine();
         quickSort(arr, 0, n - 1);
         System.out.println("Sorted array = " + Arrays.toString(arr));
+        in.close();
+
     }
 }
