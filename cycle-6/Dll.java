@@ -10,7 +10,7 @@ class Dll {
         list.add("Kishan");
         System.out.println(list + "\n");
         list.remove(4);
-        list.remove("Emil");
+        list.remove("Alok");
         Iterator itr = list.iterator();
         System.out.println("The list, after deletion, contains:");
         while (itr.hasNext())
